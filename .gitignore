@@ -1,2 +1,5 @@
 .claude/settings.local.json
 .DS_Store
+
+# Source paper PDF kept locally, not published to the repo
+Bartusevicius et al 2026 ORE.pdf
