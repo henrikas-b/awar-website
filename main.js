@@ -1,4 +1,4 @@
-// ===== AWAR Website — Main JavaScript =====
+// ===== AWAR Website—Main JavaScript =====
 
 (function () {
   'use strict';

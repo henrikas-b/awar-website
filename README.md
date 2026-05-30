@@ -1,10 +1,10 @@
-# AWAR — Evolved Adaptations to War in Humans
+# AWAR—Evolved Adaptations to War in Humans
 
 A single-page website presenting findings from cognitive psychology research on
 human adaptations for navigating coalitional aggression. Across more than 30
 studies (~12,000 participants), the work finds evidence that human minds are
 equipped with specialized mechanisms for **detecting, enumerating, and
-assessing coalitional threats** — consistent with the hypothesis that
+assessing coalitional threats**—consistent with the hypothesis that
 small-scale war was a recurrent feature of human evolution.
 
 **🔗 Live site:** https://henrikas-b.github.io/awar-website/
@@ -29,7 +29,7 @@ experimental paradigms, key findings, and broader implications.
 
 ## Running locally
 
-No build step is required — just serve the folder over HTTP:
+No build step is required—just serve the folder over HTTP:
 
 ```bash
 python -m http.server 8080
