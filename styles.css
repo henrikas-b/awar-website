@@ -1526,6 +1526,14 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 
+.footer-privacy {
+  font-size: 0.72rem !important;
+  opacity: 0.7;
+  max-width: 60ch;
+  margin: var(--space-sm) auto 0;
+  line-height: 1.5;
+}
+
 /* ===== Scroll Reveal Animations ===== */
 .reveal {
   opacity: 0;

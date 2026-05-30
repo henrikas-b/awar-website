@@ -13,9 +13,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <!-- GoatCounter analytics (privacy-friendly, no cookies) -->
-  <script data-goatcounter="https://awar.goatcounter.com/count"
-          async src="//gc.zgo.at/count.js"></script>
+  <!-- GoatCounter analytics: privacy-friendly, no cookies, no stored IPs.
+       Loaded only when the visitor has not enabled Do Not Track. -->
+  <script>
+    (function () {
+      var dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      if (dnt === '1' || dnt === 'yes') return;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = '//gc.zgo.at/count.js';
+      s.setAttribute('data-goatcounter', 'https://awar.goatcounter.com/count');
+      document.head.appendChild(s);
+    })();
+  </script>
 </head>
 <body>
   <!-- Navigation -->
@@ -833,6 +843,7 @@
 
       <div class="footer-bottom">
         <p>&copy; 2026 AWAR Project. Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.</p>
+        <p class="footer-privacy">Privacy: this site uses <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">GoatCounter</a> for aggregate visitor statistics. No cookies are set, no IP addresses are stored, and no personal data is collected or shared. Visitors with &ldquo;Do Not Track&rdquo; enabled are not counted.</p>
       </div>
     </div>
   </footer>
