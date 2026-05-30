@@ -132,12 +132,12 @@
 
       var x = 5 + Math.random() * 90;
       var y = 10 + Math.random() * 80;
-      var randomRotation = -40 + Math.random() * 80;
+      var randomRotation = -75 + Math.random() * 150;
       var scale = 0.6 + Math.random() * 0.6;
 
       fig.style.left = x + '%';
       fig.style.top = y + '%';
-      fig.style.transform = 'rotate(' + randomRotation + 'deg) scale(' + scale + ')';
+      fig.style.transform = 'rotateY(' + randomRotation + 'deg) scale(' + scale + ')';
 
       fig.innerHTML = '<div class="hero-figure-head"></div><div class="hero-figure-body"></div>';
 
@@ -154,7 +154,7 @@
     // After a short delay, align them (transition to coordinated)
     setTimeout(function () {
       figures.forEach(function (f) {
-        f.el.style.transform = 'rotate(0deg) scale(' + f.scale + ')';
+        f.el.style.transform = 'rotateY(0deg) scale(' + f.scale + ')';
       });
     }, 500);
 
@@ -164,9 +164,9 @@
       isCoordinated = !isCoordinated;
       figures.forEach(function (f) {
         if (isCoordinated) {
-          f.el.style.transform = 'rotate(0deg) scale(' + f.scale + ')';
+          f.el.style.transform = 'rotateY(0deg) scale(' + f.scale + ')';
         } else {
-          f.el.style.transform = 'rotate(' + f.randomRotation + 'deg) scale(' + f.scale + ')';
+          f.el.style.transform = 'rotateY(' + f.randomRotation + 'deg) scale(' + f.scale + ')';
         }
       });
     }, 6000);
